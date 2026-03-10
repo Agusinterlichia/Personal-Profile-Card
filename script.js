@@ -152,13 +152,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Aplicar efecto typing al nombre (descomenta si quieres usarlo)
-    // const profileName = document.querySelector('.profile-name');
-    // if (profileName) {
-    //     const originalText = profileName.textContent;
-    //     setTimeout(() => {
-    //         typeWriter(profileName, originalText, 150);
-    //     }, 1000);
-    // }
+    const profileName = document.querySelector('.profile-name');
+     if (profileName) {
+        const originalText = profileName.textContent;
+         setTimeout(() => {
+             typeWriter(profileName, originalText, 150);
+        }, 1000);
+    }
     
     // ===== FUNCIÓN PARA MOSTRAR MENSAJE DE BIENVENIDA =====
     function showWelcomeMessage() {
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: rgba(25, 118, 210, 0.9);
+            background: rgba(47, 20, 10, 0.9);
             color: white;
             padding: 12px 20px;
             border-radius: 25px;

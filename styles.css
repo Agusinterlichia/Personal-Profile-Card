@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #6d4c41; /* Marrón oscuro */
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    color: #333;
+    color: #5d4037; /* Marrón oscuro */
 }
 
 /* ===== CONTENEDOR PRINCIPAL ===== */
@@ -25,22 +25,17 @@ body {
 
 /* ===== TARJETA DE PERFIL ===== */
 .profile-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: #efebe9; /* Beige claro */
     border-radius: 24px;
     padding: 32px;
-    box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.1),
-        0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
     transform: translateY(-5px);
-    box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.15),
-        0 12px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== SECCIÓN DE INFORMACIÓN PERSONAL ===== */
@@ -59,7 +54,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 4px solid #8d6e63; /* Bordo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -70,17 +65,19 @@ body {
 
 /* INFORMACIÓN PERSONAL - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .profile-name {
-    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
     font-weight: 700;
-    color: #1976d2;
+    color: #752801; /* Bordo */
     margin-bottom: 8px;
     letter-spacing: -0.5px;
 }
 
 .profile-lastname {
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    font-weight: 500;
-    color: #424242;
+    font-weight: 700;
+    color: hsl(0, 75%, 20%); /* Bordo */
     margin-bottom: 16px;
 }
 
@@ -92,7 +89,7 @@ body {
 
 .profile-details p {
     font-size: 16px;
-    color: #666;
+    color: #5d4037; /* Marrón oscuro */
     font-weight: 400;
 }
 
@@ -103,15 +100,15 @@ body {
     gap: 12px;
     font-size: 20px;
     font-weight: 600;
-    color: #1976d2;
+    color: #800000; /* Bordo */
     margin-bottom: 20px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #e3f2fd;
+    border-bottom: 2px solid #d7ccc8; /* Beige oscuro */
 }
 
 .section-title .material-icons {
     font-size: 24px;
-    color: #1976d2;
+    color: #800000; /* Bordo */
 }
 
 /* ===== SECCIÓN DE HABILIDADES ===== */
@@ -127,24 +124,24 @@ body {
 }
 
 .skill-item {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    background: #d7ccc8; /* Beige oscuro */
     padding: 16px;
     border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid #e3f2fd;
+    border: 1px solid #bcaaa4; /* Marrón claro */
 }
 
 .skill-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(25, 118, 210, 0.2);
-    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+    box-shadow: 0 8px 16px rgba(141, 110, 99, 0.2);
+    background: #bcaaa4; /* Marrón claro */
 }
 
 .skill-name {
     font-size: 16px;
     font-weight: 500;
-    color: #1976d2;
+    color: #5d4037; /* Marrón oscuro */
 }
 
 /* ===== SECCIONES DE FAVORITOS ===== */
@@ -160,27 +157,28 @@ body {
 }
 
 .favorite-item {
-    background: #f5f5f5;
+    background: #d7ccc8; /* Beige oscuro */
     padding: 12px 16px;
     border-radius: 8px;
     font-size: 16px;
-    color: #424242;
+    color: #5d4037; /* Marrón oscuro */
     font-weight: 400;
     transition: all 0.3s ease;
-    border-left: 4px solid #1976d2;
+    border-left: 4px solid #800000; /* Bordo */
 }
 
 .favorite-item:hover {
-    background: #e3f2fd;
+    background: #bcaaa4; /* Marrón claro */
     transform: translateX(4px);
 }
 
 /* ===== FOOTER ===== */
 .footer {
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: #f5f5f5; /* Almost white */
     font-size: 14px;
     font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== EFECTOS DE ANIMACIÓN ===== */
@@ -206,11 +204,11 @@ body {
     }
     
     .profile-name {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .profile-lastname {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .skills-container {
@@ -240,11 +238,11 @@ body {
     }
     
     .profile-name {
-        font-size: 22px;
+        font-size: 24px;
     }
     
     .profile-lastname {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .section-title {
@@ -278,11 +276,11 @@ body {
     }
     
     .profile-name {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .profile-lastname {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -294,32 +292,3 @@ body {
         transition-duration: 0.01ms !important;
     }
 }
-
-/* ===== ESTILOS PARA MODO OSCURO (OPCIONAL) ===== */
-@media (prefers-color-scheme: dark) {
-    .profile-card {
-        background: rgba(30, 30, 30, 0.95);
-        color: #fff;
-    }
-    
-    .profile-name {
-        color: #64b5f6;
-    }
-    
-    .profile-lastname {
-        color: #e0e0e0;
-    }
-    
-    .profile-details p {
-        color: #b0b0b0;
-    }
-    
-    .favorite-item {
-        background: #424242;
-        color: #e0e0e0;
-    }
-    
-    .favorite-item:hover {
-        background: #616161;
-    }
-} 
